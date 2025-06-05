@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>منظمة Raith</title>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      background: #121212;
+      color: #eee;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+    header {
+      background: #0f4c81;
+      color: #fff;
+      font-weight: bold;
+      font-size: 2.5rem;
+      padding: 20px;
+      text-align: center;
+      letter-spacing: 3px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      box-shadow: 0 3px 10px #0f4c81aa;
+    }
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 20px auto;
+      gap: 20px;
+      padding: 0 20px;
+    }
+    nav.sidebar {
+      flex: 0 0 250px;
+      background: #1c1c1c;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px #0f4c81aa;
+      height: fit-content;
+      position: sticky;
+      top: 20px;
+    }
+    nav.sidebar h3 {
+      color: #00ffff;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #00ffcc;
+      padding-bottom: 5px;
+    }
+    nav.sidebar input[type="text"] {
+      width: 100%;
+      padding: 7px 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    nav.sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav.sidebar ul li {
+      margin: 10px 0;
+    }
+    nav.sidebar ul li a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav.sidebar ul li a:hover {
+      color: #0ff;
+      text-decoration: underline;
+    }
+    main.content {
+      flex: 1;
+      background: #1e1e1e;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 25px #0f4c81aa;
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+    main.content h2 {
+      font-size: 2rem;
+      color: #00ffff;
+      border-right: 6px solid #00ffcc;
+      padding-right: 15px;
+      margin-bottom: 15px;
+    }
+    main.content h3 {
+      color: #00ffff;
+      font-size: 1.5rem;
+      border-right: 4px solid #00ffcc;
+      padding-right: 10px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    main.content h4 {
+      color: #a0fff0;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+    main.content p {
+      line-height: 1.6;
+      color: #ccc;
+    }
+    main.content em {
+      color: #ffcc00;
+    }
+    /* Scrollbar for main content */
+    main.content::-webkit-scrollbar {
+      width: 8px;
+    }
+    main.content::-webkit-scrollbar-thumb {
+      background: #0f4c81;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    منظمة Raith
+  </header>
+
+  <div class="container">
+
+    <nav class="sidebar">
+      <h3>ابحث عن مقال</h3>
+      <input type="text" id="searchInput" placeholder="اكتب كلمة للبحث..." onkeyup="filterArticles()" />
+      <ul id="articlesList">
+        <li><a href="#dragon-palace">قصر التنين</a></li>
+        <li><a href="#lab-article">مختبر الاقتحام</a></li>
+        <li><a href="#escape-attempt">محاولة هروب تنين</a></li>
+      </ul>
+    </nav>
+
+    <main class="content">
+
+      <!-- المقال الأول -->
+      <article id="dragon-palace">
+        <h2>قصر التنين</h2>
+        <h3>سوف تبدأ عملية إقتحام أول قصر تنين</h3>
+        <p>
+          سبب هذا التنين أكثر من 10000 قتيل في عام 1950 وقد أشار الدكتور 
+          <del>وتلغوش علي الكلمة</del>
+          أن هذا التنين يستطيع إن يطلق في الهواء كميات كبيرة من السموم.
+          تم إرسال 5 وحدات عسكرية من الرتبة B مع 5 جنود رتبة A.
+        </p>
+        <h3>تفاصيل التنين: التنين البشري</h3>
+        <p><strong>الاسم:</strong> غير معلوم</p>
+        <p><strong>الطول:</strong> 160 سم</p>
+        <p><strong>العمر:</strong> 1000 عام</p>
+        <p>
+          التنين السام هذا التنين البشري يتغذي علي الجثث الميته المعفنة حيث تعطيه الطاقة لإنتاج السموم. 
+          حيث توجد أبحاث أنه هو من أطلق وباء وفايروس كورونا.
+        </p>
+        <h3>دور المنظمة</h3>
+        <p>
+          لن تفصح المنظمة عن أي معلومات سرية حيث أنها ستكون في غاية السرية والأهمية.
+        </p>
+      </article>
+
+      <!-- المقال الثاني -->
+      <article id="lab-article">
+        <h2>مختبر الاقتحام</h2>
+        <h3>خزائن الاحتواء</h3>
+        <p>
+          تحت الأرض، في عمق لا تصل إليه أشعة الشمس، شيّدت منظمة <strong>Raith</strong> واحدًا من أخطر المختبرات في العالم، والذي يعرف باسم <strong>مختبر الاقتحام</strong>. هذا المختبر مخصص لاحتواء ودراسة التنانين البشرية التي تمثل تهديدًا وجوديًا للبشرية.
+        </p>
+        <p>
+          يحتوي المختبر على <strong>ثمانية طوابق</strong> متتالية تحت الأرض، كل طابق مصمم خصيصًا لاحتواء فصيلة مختلفة من التنانين، ويزداد مستوى الخطورة كلما نزلنا أعمق. وتُعرف هذه الطوابق بـ: خزائن الاحتواء.
+        </p>
+        <h4>الطابق الأول: الغرفة البيضاء</h4>
+        <p>
+          يُستخدم لاحتواء التنانين الضعيفة غير النشطة. مزود بجدران من التيتانيوم المقاوم للحمض، ومراقبة مستمرة بتقنية الأشعة الحرارية. هذا الطابق هو الوحيد المسموح فيه بالدخول للعلماء المتدربين.
+        </p>
+        <h4>الطابق الثاني: الحبس البيولوجي</h4>
+        <p>
+          صُمم لاحتواء التنانين التي تُطلق سمومًا بيولوجية خفيفة. الجدران مزوّدة بطبقات عازلة كيميائيًا، ونظام تنقية هواء يعمل بتقنية العزل الذكي. الحماية تشمل تعقيمًا ذاتيًا كاملًا عند كل مرور.
+        </p>
+        <h4>الطابق الثالث: الحبس العقلي</h4>
+        <p>
+          مخصص للتنانين القادرة على التأثير العقلي أو التخاطر. الغرف مبطنة بمعدن مضاد للموجات العصبية، وتمنع تمامًا أي إشارات ذهنية من الخروج. دخول هذا الطابق يتطلب فحصًا نفسيًا مسبقًا.
+        </p>
+        <h4>الطابق الرابع: الحاوية المتجمّدة</h4>
+        <p>
+          يحبس التنانين التي تعتمد على الطاقة الحرارية. الطابق كاملًا يعمل في بيئة مجمّدة بدرجة حرارة -60°، وأي تغير في درجة الحرارة يؤدي إلى إنذار فوري وإغلاق الطابق بالكامل.
+        </p>
+        <h4>الطابق الخامس: نُظم اللهب</h4>
+        <p>
+          يحتوي على التنانين التي تُطلق نيرانًا. الجدران مكسوّة بمادة "البارامغنوم" المقاومة للاشتعال، وهناك نظام إخماد تلقائي يعتمد على تفريغ الأوكسجين فورًا. يُعد من أخطر الطوابق، وقد سُجّل فيه 3 انفجارات سابقة.
+        </p>
+        <h4>الطابق السادس: الغرفة الصامتة</h4>
+        <p>
+          مُصمم للتنانين التي تصدر موجات صوتية مدمّرة. مزود بعوازل صوتية متقدمة ونظام امتصاص ذكي للطاقة الصوتية. لا يسمح بالدخول إلا باستخدام سماعات خاصة معززة.
+        </p>
+        <h4>الطابق السابع: الحبس المظلم</h4>
+        <p>
+          يحتجز التنانين التي تتحكم في الظلام والظلال. الطابق مظلم بالكامل، مزوّد بحساسات حركة وتقنية تصوير حراري، وحواجز طاقة متقدمة تحجب الضوء الطبيعي والاصطناعي.
+        </p>
+        <h4>الطابق الثامن: الاحتواء النهائي</h4>
+        <p>
+          الطابق الأخير والأكثر أمانًا. مخصص لأشد التنانين وحوشية. يتم التحكم فيه عن بعد بالكامل ولا يسمح بدخول أي بشري. الحماية تعتمد على أقوى الحواجز الكهربائية والليزر والمواد المضادة للطاقة.
+        </p>
+        <h3>طرق الحماية</h3>
+        <p>
+          لكل طابق نظم حماية خاصة حسب نوع التنين المحبوس فيه، تشمل:
+        </p>
+        <ul>
+          <li>أجهزة إنذار فورية مرتبطة بمركز المراقبة 24/7.</li>
+          <li>حواجز طاقة تمنع أي هروب أو اختراق.</li>
+          <li>أنظمة تنقية هواء وتطهير ذاتي.</li>
+          <li>كاميرات متقدمة مع تقنيات تعقب بيومترية.</li>
+          <li>فرق أمن خاصة مجهزة للتدخل السريع.</li>
+        </ul>
+        <h3>تصريح الخبير</h3>
+        <p>
+          قال خبير الأمن البيولوجي د. سامي الجندي: <em>"بناء هذه الخزائن المتعددة الطوابق يعد إنجازًا هندسيًا وعلميًا غير مسبوق. قدرة المنظمة على المحافظة على هذه الكائنات الخطيرة بهذه الطريقة تضمن سلامة العالم من خطر داهم."</em>
+        </p>
+      </article>
+
+      <!-- المقال الثالث -->
+      <article id="escape-attempt">
+        <h2>محاولة هروب تنين</h2>
+        <p>
+          شهدت الغرفة البيضاء مؤخرًا حادثة غير متوقعة، حيث حاول أحد التنانين الهروب من غرفة الاحتواء المصممة خصيصًا للطابق الأول. هذا التنين، الذي كان محجوزًا في الغرفة البيضاء لكونه أقل خطورة، أظهر ذكاءً وقدرة غير مسبوقة في التخطيط للهروب.
+        </p>
+        <p>
+          استغلت الإدارة الحادثة لتعزيز الإجراءات الأمنية، حيث تم نقل التنين الهارب إلى غرفة أكثر حراسة في الطابق الأول تعرف باسم "الاحتواء المحصن"، حيث يحرسها اثنان من الجنود ذوي رتبة E مجهزين بأحدث الأسلحة والتقنيات.
+        </p>
+        <p>
+          الغرفة البيضاء الآن محاطة بأنظمة مراقبة متقدمة وإجراءات مشددة لمنع تكرار مثل هذه المحاولات، كما تم تدريب الجنود المكلفين على التعامل مع هذه الحالات الطارئة بكفاءة عالية.
+        </p>
+        <p>
+          تقول مصادر المنظمة: <em>"هذه المحاولة أكدت على ضرورة تحديث بروتوكولات الحماية، وأنه لا يمكن الاستهانة حتى بأضعف التنانين."</em>
+        </p>
+      </article>
+
+    </main>
+
+  </div>
+
+<script>
+  function filterArticles() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const articles = document.querySelectorAll('#articlesList li');
+    articles.forEach((li) => {
+      const text = li.textContent.toLowerCase();
+      if (text.includes(input)) {
+        li.style.display = '';
+      } else {
+        li.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
